@@ -1,0 +1,113 @@
+#opacity {
+    opacity:0.4;
+    filter:alpha(opacity=40);
+}
+
+body {
+    background: linear-gradient(to left, sandybrown, #9f8851, #a49c9c);
+    font-family:  sans-serif;
+    color: #000000;
+    height:100%;
+    text-align:center;
+    font-size:18px;
+}
+
+canvas{
+    border: white dashed 2px;
+    padding:10px;
+    background-image: url("hangman.jpg");
+}
+
+h1 {
+    text-align: center;
+    font-family: "Arial Black";
+    font-weight: bold;
+    font-size: xx-large;
+    text-transform: uppercase;
+    margin-top: 0px;
+}
+p {
+    font-size: large;
+    font-family: "Times New Roman";
+    position: center;
+    line-height: 0px;
+    font-weight: bold;
+    padding-top: 0px;
+}
+
+h3{
+    left: 50px;
+    font-family: "Times New Roman";
+    font-weight: bold;
+    color: aqua;
+}
+
+#clue{
+    color: aqua;
+}
+
+#alphabet {
+@include clear;
+    margin:auto ;
+    padding:0;
+    max-width:1223px;
+}
+
+#alphabet li {
+    float:left;
+    margin: 0 10px 10px 0;
+    list-style:none;
+    width:35px;
+    height:30px;
+    padding-top:5px;
+    background: cadetblue;
+    cursor:pointer;
+    border: solid 1px black;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+
+#my-word {
+    margin: 0;
+    display: block;
+    padding: 0;
+}
+
+#my-word li {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    display: inline-block;
+    padding: 0 10px;
+    font-size:1.2em;
+    font-weight: bold;
+    font-family: "Arial Black";
+}
+
+#mylives{
+    font-size:1.3em;
+    text-align:center;
+    display:block;
+    font-family: "Times New Roman";
+    font-weight: bold;
+
+
+}
+
+button{
+@include corners (5px);
+    background: darkblue;
+    color:aqua;
+    cursor:pointer;
+    font-size:1.2em;
+    padding:10px 10px;
+    width:150px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+
+
+

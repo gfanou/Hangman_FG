@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+<div class="wrapper">
+
+    <h1> Hangman Game</h1>
+    <p>Click one, two or three times "Restart" button to choose the category and use the alphabet
+        below to guess the word, or click hint to get a clue. </p> <br>
+</div>
+<div class="wrapper">
+    <div id="buttons"> </div>
+    <h3 id="catagoryName"></h3>
+    <div id="hold">  </div>
+    <p id="mylives"></p>
+    <p id="clue">Clue:</p>
+    <canvas id="stickman"></canvas>
+    <div class="container">
+        <button id="hint">Hint</button>
+        <button id="reset">Restart</button>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="code.js"></script>
+</body>
+</html>
